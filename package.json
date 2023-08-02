@@ -1,0 +1,17 @@
+{
+  "name": "handlebars-express-template-inheritance",
+  "version": "1.0.0",
+  "description": "A working example of handlebars with express WITH template inheritance using 'block' and 'content' (similar to Pug and Nunjucks)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.2",
+    "express-handlebars": "7.1.1",
+    "handlebars": "4.7.8",
+    "handlebars-layouts": "3.1.4"
+  }
+}

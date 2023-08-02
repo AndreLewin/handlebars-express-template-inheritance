@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+</head>
+
+<body>
+  <header>
+    {{#block "extraheaders"}}{{/block}}
+  </header>
+
+  {{#block "navigation"}}
+  DEFAULT NAV CONTENT
+  {{/block}}
+
+  <hr />
+
+  {{#block "body"}}
+  DEFAULT BODY CONTENT
+  {{/block}}
+
+  {{!-- If we use this, we can inject code into it by writting at the root of home.handlebars
+  {{{body}}}
+  !--}}
+
+  <script>console.log("script in layout")</script>
+  {{#block "extrascripts"}}{{/block}}
+</body>
+
+</html>

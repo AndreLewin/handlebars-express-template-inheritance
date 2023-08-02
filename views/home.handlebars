@@ -1,0 +1,24 @@
+{{!-- We can override the value of a variable that way:
+{{#content "title"}}Home Page{{/content}}
+!--}}
+
+{{#content "navigation"}}
+<nav>
+  OVERRIDE NAV CONTENT
+</nav>
+{{/content}}
+
+{{#content "body"}}
+<main>
+  <div>OVERRIDE BODY CONTENT</div>
+  {{ variable }}
+  {{!-- include the potato partial --}}
+  {{> potato }}
+</main>
+{{/content}}
+
+{{#content "extrascripts"}}
+<script>
+  console.log("extra script")
+</script>
+{{/content}}
